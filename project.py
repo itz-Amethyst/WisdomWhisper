@@ -51,7 +51,7 @@ def apply_selected_font():
     try:
         selected_font = select_figlet_font()
 
-        figlet_text = pyfiglet.figlet_format("Hello, Figlet!", font=selected_font)
+        figlet_text = pyfiglet.figlet_format("Wisdom Whisper", font=selected_font)
         print(figlet_text)
     except ValueError as e:
         print(e)
@@ -138,7 +138,7 @@ def generate_another_one(category):
         print("Invalid input. Please select 'Yes' or 'No.")
 
 
-def print_in_figlet_way(text, selected_font = 'mini'):
+def print_in_figlet_way(text):
     figlet_text = pyfiglet.figlet_format(text, font = selected_font, width=90, justify="center")
 
     print(figlet_text)
